@@ -1,0 +1,70 @@
+\documentclass[12pt]{report}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{csvsimple}
+\usepackage{xcolor}
+\usepackage{adjustbox}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{lscape}
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{longtable}
+\setmarginsrb{1.8 cm}{0cm}{2 cm}{1 cm}{1.8cm}{0 cm}{0cm}{1cm}
+
+\title{\LARGE Bill of Materials for mini\textunderscore bldc Driver}								
+% Title
+\author{ \thedate}						
+% Author
+\date{27.03.2019}
+% Date
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+
+\csvset{my column width/.style={after head=\csv@pretable\begin{longtable}{*{\csv@columncount}{p{#1}}}\csv@tablehead}}
+
+
+
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+
+	\begin{flushleft}
+
+	{ \huge \bfseries \thetitle}\\
+	\rule{\linewidth}{0.25 mm} \\[0.5cm]
+	\begin{minipage}{0.8\textwidth}
+		\begin{flushleft} \normalsize
+			{Date : 28.03.2019\\}
+             Total Part count : 61\\
+             Total Cost :\\
+             Created by : Ozgur Gulsuna \hfill Inspected by :
+			\end{flushleft}
+	\end{minipage}\\
+	
+	\end{flushleft}
+	
+	
+
+  
+  \csvautobooklongtable[separator=comma, my column width=2.455cm, late after line={\\\midrule},late after last line={\end{longtable}},respect all]{components.csv}
+
+\end{titlepage}
+\end{document}

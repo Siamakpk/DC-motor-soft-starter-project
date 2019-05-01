@@ -1,0 +1,333 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Diode:1N4007 D?
+U 1 1 5CAC02E6
+P 1750 1400
+F 0 "D?" H 1750 1616 50  0001 C CNN
+F 1 "1N4007" H 1750 1250 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1750 1225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1750 1400 50  0001 C CNN
+	1    1750 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US 2kR
+U 1 1 5CAC0DEE
+P 1750 1700
+F 0 "2kR" H 1818 1700 50  0000 L CNN
+F 1 "2K" H 1818 1655 50  0001 L CNN
+F 2 "" V 1790 1690 50  0001 C CNN
+F 3 "~" H 1750 1700 50  0001 C CNN
+	1    1750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US 470R
+U 1 1 5CAC19CA
+P 1750 2000
+F 0 "470R" H 1818 2000 50  0000 L CNN
+F 1 "R_US" H 1818 1955 50  0001 L CNN
+F 2 "" V 1790 1990 50  0001 C CNN
+F 3 "~" H 1750 2000 50  0001 C CNN
+	1    1750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U?
+U 1 1 5CAC24AD
+P 2400 2000
+F 0 "U?" H 2400 2325 50  0001 C CNN
+F 1 "PC817" H 2400 2233 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 2200 1800 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2400 2000 50  0001 L CNN
+	1    2400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US 10kR
+U 1 1 5CAC4138
+P 3600 2350
+F 0 "10kR" V 3700 2350 50  0000 C CNN
+F 1 "R_US" V 3700 2350 50  0001 C CNN
+F 2 "" V 3640 2340 50  0001 C CNN
+F 3 "~" H 3600 2350 50  0001 C CNN
+	1    3600 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US 4.7R
+U 1 1 5CAC4383
+P 3300 2100
+F 0 "4.7R" V 3200 2050 50  0000 L CNN
+F 1 "R_US" V 3400 2000 50  0001 L CNN
+F 2 "" V 3340 2090 50  0001 C CNN
+F 3 "~" H 3300 2100 50  0001 C CNN
+	1    3300 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US 4.7R
+U 1 1 5CAC4603
+P 2700 2250
+F 0 "4.7R" H 2768 2250 50  0000 L CNN
+F 1 "R_US" H 2768 2205 50  0001 L CNN
+F 2 "" V 2740 2240 50  0001 C CNN
+F 3 "~" H 2700 2250 50  0001 C CNN
+	1    2700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US 10kR
+U 1 1 5CAC4B66
+P 2950 2550
+F 0 "10kR" H 3018 2550 50  0000 L CNN
+F 1 "R_US" H 3018 2505 50  0001 L CNN
+F 2 "" V 2990 2540 50  0001 C CNN
+F 3 "~" H 2950 2550 50  0001 C CNN
+	1    2950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q?
+U 1 1 5CAC56DF
+P 2700 2600
+F 0 "Q?" V 2951 2600 50  0001 C CNN
+F 1 "IRF530N" V 2951 2600 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2950 2525 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2700 2600 50  0001 L CNN
+	1    2700 2600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q?
+U 1 1 5CAC7437
+P 3650 2100
+F 0 "Q?" H 3856 2146 50  0001 L CNN
+F 1 "IRF530N" V 3900 1950 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3900 2025 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3650 2100 50  0001 L CNN
+	1    3650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP 100nF
+U 1 1 5CAC8CC4
+P 4100 2100
+F 0 "100nF" V 4300 2000 50  0000 L CNN
+F 1 "CAP" H 4278 2055 50  0001 L CNN
+F 2 "" H 4100 2100 50  0001 C CNN
+F 3 "~" H 4100 2100 50  0001 C CNN
+	1    4100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP 100nF
+U 1 1 5CAC9853
+P 2700 3050
+F 0 "100nF" V 2950 3000 50  0000 L CNN
+F 1 "CAP" V 2900 2850 50  0001 L CNN
+F 2 "" H 2700 3050 50  0001 C CNN
+F 3 "~" H 2700 3050 50  0001 C CNN
+	1    2700 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+10V #PWR0101
+U 1 1 5CACB6DD
+P 2700 1650
+F 0 "#PWR0101" H 2700 1500 50  0001 C CNN
+F 1 "+10V" H 2715 1823 50  0000 C CNN
+F 2 "" H 2700 1650 50  0001 C CNN
+F 3 "" H 2700 1650 50  0001 C CNN
+	1    2700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR0102
+U 1 1 5CACBC67
+P 3100 1650
+F 0 "#PWR0102" H 3100 1500 50  0001 C CNN
+F 1 "+10V" H 3115 1823 50  0000 C CNN
+F 2 "" H 3100 1650 50  0001 C CNN
+F 3 "" H 3100 1650 50  0001 C CNN
+	1    3100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 5CACCDA0
+P 3750 2700
+F 0 "#PWR0103" H 3750 2450 50  0001 C CNN
+F 1 "GNDREF" H 3755 2527 50  0000 C CNN
+F 2 "" H 3750 2700 50  0001 C CNN
+F 3 "" H 3750 2700 50  0001 C CNN
+	1    3750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 5CACD310
+P 3550 1550
+F 0 "D?" H 3550 1766 50  0001 C CNN
+F 1 "1N4007" H 3400 1450 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3550 1375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3550 1550 50  0001 C CNN
+	1    3550 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Motor:Motor_DC M?
+U 1 1 5CACDE52
+P 3750 1500
+F 0 "M?" H 3908 1496 50  0001 L CNN
+F 1 "Motor_DC" H 3908 1450 50  0000 L CNN
+F 2 "" H 3750 1410 50  0001 C CNN
+F 3 "~" H 3750 1410 50  0001 C CNN
+	1    3750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW?
+U 1 1 5CAD02D8
+P 3100 1850
+F 0 "SW?" H 3100 1650 50  0001 C CNN
+F 1 "SW_DPST_x2" H 3100 1750 50  0000 C CNN
+F 2 "" H 3100 1850 50  0001 C CNN
+F 3 "~" H 3100 1850 50  0001 C CNN
+	1    3100 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2050 3100 2100
+Wire Wire Line
+	3100 2100 3150 2100
+Connection ~ 2700 2400
+Connection ~ 3450 2100
+Wire Wire Line
+	2700 1900 2700 1650
+Wire Wire Line
+	3550 1400 3550 1300
+Wire Wire Line
+	3550 1300 3750 1300
+Wire Wire Line
+	3750 1300 3750 1250
+Connection ~ 3750 1300
+Wire Wire Line
+	1750 1850 2100 1850
+Wire Wire Line
+	2100 1850 2100 1900
+Connection ~ 1750 1850
+Wire Wire Line
+	2100 2100 2100 2150
+Wire Wire Line
+	2100 2150 1750 2150
+Wire Wire Line
+	1750 2150 1750 2700
+Connection ~ 1750 2150
+Connection ~ 3750 2700
+Wire Wire Line
+	4100 2350 3750 2350
+Connection ~ 3750 2350
+Wire Wire Line
+	3750 2350 3750 2700
+Wire Wire Line
+	3050 1250 1750 1250
+Wire Wire Line
+	3750 1900 3750 1850
+Wire Wire Line
+	4100 1850 3750 1850
+Connection ~ 3750 1850
+Wire Wire Line
+	3750 1850 3750 1800
+Wire Wire Line
+	3750 2300 3750 2350
+Wire Wire Line
+	3450 2100 3450 2350
+Wire Wire Line
+	3550 1850 3750 1850
+Wire Wire Line
+	3550 1700 3550 1850
+Wire Wire Line
+	3350 1250 3750 1250
+$Comp
+L Device:R_US 11W
+U 1 1 5CAC31C7
+P 3200 1250
+F 0 "11W" V 3100 1250 50  0000 C CNN
+F 1 "56R" V 3300 1250 50  0000 C CNN
+F 2 "" V 3240 1240 50  0001 C CNN
+F 3 "~" H 3200 1250 50  0001 C CNN
+	1    3200 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 3050 2950 2700
+Connection ~ 2950 2700
+Wire Wire Line
+	2950 2700 3750 2700
+Connection ~ 2450 2700
+Wire Wire Line
+	2450 2700 2500 2700
+Wire Wire Line
+	2450 2700 2450 3050
+Wire Wire Line
+	2700 2400 2950 2400
+Wire Wire Line
+	2900 2700 2950 2700
+Wire Wire Line
+	1500 1250 1750 1250
+Connection ~ 1750 1250
+Wire Wire Line
+	1500 1350 1600 1350
+Wire Wire Line
+	1600 1350 1600 2700
+Wire Wire Line
+	1600 2700 1750 2700
+Connection ~ 1750 2700
+Wire Wire Line
+	1750 2700 2450 2700
+$Comp
+L power:+24V #PWR0104
+U 1 1 5CB08996
+P 1500 1250
+F 0 "#PWR0104" H 1500 1100 50  0001 C CNN
+F 1 "+24V" V 1515 1378 50  0000 L CNN
+F 2 "" H 1500 1250 50  0001 C CNN
+F 3 "" H 1500 1250 50  0001 C CNN
+	1    1500 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 5CB0AACE
+P 1500 1350
+F 0 "#PWR0105" H 1500 1100 50  0001 C CNN
+F 1 "GNDREF" V 1505 1222 50  0000 R CNN
+F 2 "" H 1500 1350 50  0001 C CNN
+F 3 "" H 1500 1350 50  0001 C CNN
+	1    1500 1350
+	0    1    1    0   
+$EndComp
+Text Notes 1900 2250 0    50   ~ 0
+I(max) = 10mA\n
+Text Notes 1829 2262 0    50   ~ 0
+<\n\n
+Text Notes 2441 1195 0    50   ~ 0
+I(max) = 400mA\n
+Text Notes 2785 1281 0    50   ~ 0
+>
+$EndSCHEMATC
