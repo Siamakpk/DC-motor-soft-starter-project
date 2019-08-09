@@ -1,0 +1,65 @@
+Annotated Screw_Terminal_01x02 as J2
+Annotated R_US as R6
+Annotated filter res as R5
+Annotated R_US as R4
+Annotated R_US as R3
+Annotated R_US as R2
+Annotated 10kR as R1
+Annotated IXFH40N30 as Q2
+Annotated IXFH40N30 as Q1
+Annotated R_US as R7
+Annotated Screw_Terminal_01x02 as J1
+Updated 15 VDC from IN to IN1
+Annotated DIODE as D5
+Annotated LED as D4
+Annotated LED as D3
+Annotated LED as D2
+Annotated 1N4007 as D1
+Annotated 100uF as C7
+Annotated R_US as R8
+Annotated 4.7R as R9
+Annotated 10kR as R10
+Annotated 220R as R11
+Annotated 4.7R as R12
+Annotated SW_DPST_x2 (unit A) as SW1A
+Annotated SW_DPST_x2 (unit B) as SW1B
+Annotated SW_DPST_x2 (unit A) as SW2A
+Annotated PC817 as U1
+Annotated PC817 as U2
+Annotated ACS712 30A as U3
+Annotated TLP350 as U4
+Annotated LM2575T as U5
+Annotated 1nF as s1
+Updated 1nF from s to s2
+Annotated GNDREF as #PWR017
+Annotated GNDREF as #PWR02
+Annotated GNDREF as #PWR03
+Annotated +5V as #PWR04
+Annotated GNDREF as #PWR05
+Annotated GNDREF as #PWR06
+Annotated +5V as #PWR07
+Annotated GNDREF as #PWR08
+Annotated GNDREF as #PWR09
+Annotated GNDREF as #PWR010
+Annotated GNDREF as #PWR011
+Annotated GNDREF as #PWR012
+Annotated +15V as #PWR013
+Annotated GNDREF as #PWR014
+Annotated +5V as #PWR015
+Annotated GNDREF as #PWR016
+Annotated +5V as #PWR01
+Annotated +15V as #PWR018
+Annotated GNDREF as #PWR019
+Annotated +15V as #PWR020
+Annotated GNDREF as #PWR021
+Annotated +5V as #PWR022
+Updated R_US from 10kR to 10kR1
+Updated 22kR from 2.5_Watt to 2.5_Watt1
+Updated fine adj res from 500R to 500R1
+Annotated Arduino_Nano as A1
+Annotated 100nF as C1
+Annotated 100nF as C2
+Annotated 100nF as C3
+Annotated 100uf as C4
+Annotated 220uF as C5
+Annotated 100nF as C6

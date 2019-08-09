@@ -1,15 +1,23 @@
 
 
 int pwm = 5;    // pwm connected to digital pin 9 for 1MHZ 
-const int startbuttonPin = 2;     // the number of the pushbutton pin
+const int errorPin = 16;     // the number of the error pin
+const int startbuttonPin = 15;     // the number of the start pushbutton pin
+const int startingled = 12;     // the number of the starting led
+const int errorled = 11;     // the number of the error led
+const int operatingled = 10;     // the number of the operating mode led
 
-int startbuttonState = 0;         // variable for reading the pushbutton status
+int errorstate = 1;         // variable for code state: 0 for error,1 for ready, 2 for starting, 3 for operating
+int startbuttonState=0; //state for start/stop
 
 int duty=0;               //pwm duty cycle variable
-int val = 0;
+int current = 0;
 
 void setup() {
   pinMode(startbuttonPin, INPUT); //initialize the pushbutton pin as an input
+  pinMode(startingled, OUTPUT); //initialize the pushbutton pin as an input
+  pinMode(errorled, OUTPUT); //initialize the pushbutton pin as an input
+  pinMode(operatingled, OUTPUT); //initialize the pushbutton pin as an input
 
   attachInterrupt(1, stopISR, RISING);
 
@@ -20,9 +28,24 @@ void setup() {
 }
 
 void loop() {
+  
+  errorstate = !digitalRead(errorPin);
+  if (errorstate) {
+    digitalWrite(errorled,!errorled);
+    delay(1000);
+  }
+  else{
+    digitalWrite(errorled,LOW);
+  }
   startbuttonState = digitalRead(startbuttonPin);
   
- if (startbuttonState == HIGH) {
+
+                       
+                         
+                     
+  
+  
+ if (errorState == LOW) {
      //fade in from min to max in increments of 1 points:
     for (duty = 0 ; duty <= 255; duty += 1) {
       val = analogRead(A0);  // read the input pin
@@ -42,6 +65,34 @@ void loop() {
   
 }
  }
+}
+void stateISR(){
+  errorstate = digitalRead(errorPin);
+  startbuttonState = digitalRead(startbuttonPin);
+  stopbuttonState = digitalRead(stopbuttonPin);
+  restartbuttonState = digitalRead(restartbuttonPin);
+
+
+ if ( errorState == LOW && startbuttonstate == LOW && stopbuttonState == LOW&& restartbuttonState == LOW) { 
+  
+                          state=1;
+  
+                          } 
+ if (startbuttonstate == HIGH && errorState == HIGH && stopbuttonState == LOW&& restartbuttonState == LOW) { 
+  
+                          state=2;
+  
+                          }
+ if (startbuttonstate == LOW && errorState == HIGH && stopbuttonState == HIGH && restartbuttonState == LOW) { 
+  
+                          state=1;
+  
+                          }
+ else { 
+                          state=0;
+                          
+                          }                          
+                     
 }
 void stopISR(){
     analogWrite(pwm, 0);
