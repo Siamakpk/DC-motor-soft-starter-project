@@ -1,0 +1,11 @@
+- 2x30 A 600V diode FAST
+https://www.direnc.net/dsek60-06a-2x30a-600v-35ns-diode-fred
+
+-HK15F-DC12V-S-K (12V 30A röle)
+https://www.direnc.net/hk15f-dc12v-s-k--12v-30a-t-role
+
+-18V zener
+https://www.direnc.net/15v-smd-melf-zener-diyot-bzv55c15
+
+-TL431 2.5 ref
+https://www.youtube.com/watch?v=YPyCVvTZDw0
