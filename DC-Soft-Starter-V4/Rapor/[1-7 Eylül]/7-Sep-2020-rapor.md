@@ -20,11 +20,23 @@ Röle kontağı bazen takılı kalıyordu bunun sebebinin rölenin iki ucu aras�
 - Rdc = 1.10779 ohm  
 - L = 753.461 microHenry  
 <img src="LCR.png" width="800">  
+
 ** ölçümler 1 kHz ile yapıldı.  
 Motor modelini endüktans ve direnç bağlayarak fiziksel ortamda kurdum ve denemelere devam ettim. Rölenin kontaklarının yapışma problemi çözülmüştü ancak biraz daha incelemek istedim. Önce devrenin modelini spice üzerinde kurdum. Sonra röle akımını inceledim ve 150 amper bir anlık akım olduğunu fark ettim. Fiziksel devre üzerinde de ölçüm almaya karar verdim, sonuçlar neredeyse bire bir tutuyordu.  
-![](Spike.png)
-neredeyse 180 amperlik bir akım geçiyor gözüküyordu, ancak süre çok kısa olduğu için güç değeri düşük bir spike bu (PARALEL KAPASİTOR ATMAYI DENEYEBİLİRİM, SNUBBER GİBİ DAVRANIR)(simulasyon)
-  
+
+<img src="Spike.png" width="800">  
+
+neredeyse 180 amperlik bir akım geçiyor gözüküyordu, ancak süre çok kısa olduğu için güç değeri düşük bir spike bu (PARALEL KAPASİTOR ATMAYI DENEYEBİLİRİM, SNUBBER GİBİ DAVRANIR)(simulasyon).  
+Bu geçen akım çok problem yaratmıyor gibi gözükse de jeneratör ile deneme yapıldığında nasıl bir tepki verecek görmek istedim.  
+ 
+<img src="Real.png" width="800">  
+Böyle oldu..  
+ 
+akımın pik değeri neredeyse yarıya düştü, bunun sebebi tahminimce jeneratörün maksimum akım değeri(400amper) ve/veya tam olarak doğru modellemediğim back EMF kaynağı. Ancak şunun da söylmeliyim ki bu görselden yola çıkarak motorun endüktansının değeri benim LCR metre ile ölçüm yaptığımdan daha fazla olmalıymış gibi geliyor ancak bu farklılık gerçekten endüktans farklılığı mı yoksa tam olarak modellemediğim dc jeneratör back emf kaynağı mı emin değilim. Belki de ikisi birden...  
+
+<img src="Setup.png" width="800">  
+
+Setup ise bu şekilde. Sağ taraftaki reosta, endüktans ve switch jeneratörü modellemek için koyduğum elemanlar.  
   
 ** Firmware **  
 - Serial üzerinden hataların gönderilmesi tamamlandı  
