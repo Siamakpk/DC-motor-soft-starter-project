@@ -19,7 +19,7 @@ Röle kontağı bazen takılı kalıyordu bunun sebebinin rölenin iki ucu aras�
 **değerler**  
 - Rdc = 1.10779 ohm  
 - L = 753.461 microHenry  
-<img src="LCR.png" width="400">
+<img src="LCR.png" width="800">  
 ** ölçümler 1 kHz ile yapıldı.  
 Motor modelini endüktans ve direnç bağlayarak fiziksel ortamda kurdum ve denemelere devam ettim. Rölenin kontaklarının yapışma problemi çözülmüştü ancak biraz daha incelemek istedim. Önce devrenin modelini spice üzerinde kurdum. Sonra röle akımını inceledim ve 150 amper bir anlık akım olduğunu fark ettim. Fiziksel devre üzerinde de ölçüm almaya karar verdim, sonuçlar neredeyse bire bir tutuyordu.  
 ![](Spike.png)
